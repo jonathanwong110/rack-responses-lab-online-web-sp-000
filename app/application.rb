@@ -7,7 +7,6 @@ class App
     else Time.now.hour.between?(12, 24)
       resp.write "Afternoon"
     end
-    resp.finish
   end
-  
+  resp.finish
 end
