@@ -4,7 +4,7 @@ class App
     resp = Rack::Response.new
     if Time.now.hour.between?(0, 11)
       resp.write "Morning"
-    else Time.now < 2019-06-21-12:00:00
+    else Time.now.hour.between?(12, 24)
       resp.write "Afternoon"
     end
     resp.finish
